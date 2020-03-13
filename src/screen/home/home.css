@@ -1,0 +1,106 @@
+.Flex1{
+  flex: 1;
+}
+
+.Header{
+	background-color: #ff9b85;
+	text-align: center;
+}
+
+.Text20BlackBold{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.TabBlock{
+	width:90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.TabBlock1{
+	margin-top: 5%;
+}
+
+.TabelHead{
+	background-color:black;
+	color:white;
+}
+
+.FilterButton{
+	margin-bottom: 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ColoredRow{
+	background-color: limegreen;
+}
+
+.ButtonAlign{
+	justify-content: space-between;
+	display: flex;
+}
+
+.carousalImage{
+	object-fit: cover;
+}
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+    display: flex !important;
+}
+
+.stickyHeaderBlock{
+	overflow: scroll;
+}
+
+.sticky-wrapper{
+	height: auto !important;
+}
+
+.undelineSport{
+	height: 2px;
+	width: -moz-available;
+	/* width: -webkit-fill-available; */
+	background-color: black;
+	position: absolute;
+	bottom: 10px
+}
+
+.list-group-item{
+	display: flex !important;
+	border: 0px solid rgba(0, 0, 0, 0) !important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gameCard{
+	background-color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2%;
+}
+
+.gameCardList{
+	margin-bottom: 5%;
+}
+
+.matchDetailBlock{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: lightgray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.priceTimeBlock{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

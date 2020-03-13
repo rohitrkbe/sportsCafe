@@ -1,0 +1,67 @@
+.whiteBg{
+    background-color: white;
+}
+
+.contestTopDetail{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contestCard{
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    
+}
+
+.contestCardTopSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contestCardTopSectionType{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.ScoreDiv{
+    width: 33%;
+    background-color: maroon;
+    height: 50%;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+
+.PayoutDiv{
+    width: 50%;
+    background-color: darkgoldenrod;
+    height: 50%;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+}
+
+.contestCardMiddleSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contestCardBottomSection{
+    background-color: lightgray;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

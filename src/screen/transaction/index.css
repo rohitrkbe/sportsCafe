@@ -1,0 +1,60 @@
+.transactionBody{
+ padding-left: 2%;
+ padding-right: 2%;
+}
+
+.transactionLabel{
+
+}
+
+.transactionTotalCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: skyblue;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.amountiWithdrawalCard{
+    display: flex;
+    background: white;
+    margin-top: 3%;
+    border-radius: 7px;
+    padding-left: 2%;
+    padding-top: 3%;
+}
+
+.amountWithdrawalText{
+    padding-left: 5%;
+}
+
+.transactionCard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-right: 3%;
+    max-width: 30% !important;
+}
+
+.withdrawalCard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-right: 3%;
+    max-width: 44% !important;
+}
+
+.amountDetails{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}

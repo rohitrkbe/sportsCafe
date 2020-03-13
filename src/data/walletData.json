@@ -1,0 +1,37 @@
+{
+  "wallet_balance":10,
+  "transactions":[
+     {
+        "type":"add_to_wallet",
+        "amount":100,
+        "status":"success"
+     
+},
+     {
+        "type":"add_to_wallet",
+        "amount":200,
+        "status":"failed"
+     
+},
+     {
+        "type":"remove_from_wallet",
+        "amount":50,
+        "status":"success"
+     
+}
+  
+],
+  "withdrawals":[
+     {
+        "status":"success",
+        "amount":10
+     
+},
+     {
+        "status":"success",
+        "amount":66
+     
+}
+  
+]
+}
