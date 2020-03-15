@@ -4,10 +4,8 @@ import './index.css';
 import * as AD from '../../actions';
 import TopHeader from '../../components/header/TopHeader';
 import { Badge } from 'reactstrap';
-import StickyHeader from '../../components/header/StickyHeaderHome';
 import StickyHeaderContest from '../../components/header/StickyHeaderContest';
 import ContestCard from '../../components/cards/ContestCard';
-
 
 class Contest extends React.Component {
 	constructor(props){
@@ -15,7 +13,7 @@ class Contest extends React.Component {
 		this.state={
             selectedTab : 'all',
             filteredList: [],
-		};
+        };
 	}
 
 	componentDidMount(){
@@ -23,7 +21,7 @@ class Contest extends React.Component {
     }
     
     handleTabClick = item => {
-        if ( item != 'all' ){
+        if ( item !== 'all' ){
             let tempArray=[...this.props.contestData.contests];
             let newList = [];
             for(let i=0; i<tempArray.length; i++){
@@ -38,7 +36,7 @@ class Contest extends React.Component {
 
   render(){
     const { selectedTab, filteredList } = this.state; 
-    const { homeData, contestData } = this.props; 
+    const { contestData } = this.props; 
     return (
 		<div className='Flex1' >
 			<TopHeader text='Contest' />

@@ -24,7 +24,7 @@ export default (prop) =>{
                                     <div className='' >
                                         <div className='amountDetails' >
                                             <p>&#8377;{item.amount}</p>
-                                            <img src={require('../../assets/images/add money-min.png')} height="30" width="30"/> 
+                                            <img alt='abc' src={require('../../assets/images/add money-min.png')} height="30" width="30"/> 
                                         </div>
                                             <p>{text}</p>
                                     </div>

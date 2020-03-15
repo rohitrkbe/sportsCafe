@@ -13,6 +13,13 @@ export default ( props ) => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll);
+    };
+  }, []);
+
+  useEffect(()=>{
     let tempArray=[];
     for(let i=0; i<props.items.length; i++){
         if( tempArray.includes(props.items[i].contest_type) ){
@@ -22,12 +29,7 @@ export default ( props ) => {
         }
     }
     setListItems(tempArray);
-
-
-    return () => {
-      window.removeEventListener('scroll', () => handleScroll);
-    };
-  }, []);
+  },[]);
 
   return (
     <Fragment>

@@ -11,6 +11,7 @@ import StickyHeaderHome from '../../components/header/StickyHeaderHome';
 class Home extends React.Component {
 	constructor(props){
 		super(props);
+		console.log('props', props.history);
 		this.state={
 			redirectScreen: false,
 			screenName:'',
@@ -41,7 +42,7 @@ class Home extends React.Component {
 	}
 
 	handleSportListClick = ( id ) =>{
-		if ( id != 0 ){
+		if ( id !== 0 ){
 			let tempArray=[...this.props.homeData.challenges];
             let newList = [];
             for(let i=0; i<tempArray.length; i++){
@@ -56,7 +57,7 @@ class Home extends React.Component {
 
   render(){
 	const { redirectScreen, screenName, selectedSportTab, filteredList }= this.state;
-	const { homeData }= this.props;
+	const { homeData } = this.props;
 	if( redirectScreen ){
 		return(
 			<Redirect to={ screenName } />
@@ -78,8 +79,8 @@ class Home extends React.Component {
 			{
 				homeData && homeData.challenges &&
 				<div>
-					{ selectedSportTab == 0 && <p>All Games ({homeData.challenges.length})</p>}
-					<GameCard items={ selectedSportTab == 0 ? homeData.challenges : filteredList } />
+					{ selectedSportTab === 0 && <p>All Games ({homeData.challenges.length})</p>}
+					<GameCard items={ selectedSportTab === 0 ? homeData.challenges : filteredList } />
 				</div>
 			}
 			

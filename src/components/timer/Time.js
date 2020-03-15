@@ -9,7 +9,7 @@ const TimeLabel = ( prop ) => {
     let toTime = new Date();
     let differenceTravel = toTime.getTime() - fromTime.getTime();
     let seconds = Math.floor((differenceTravel) / (1000));
-    let newTime = moment().startOf('day').seconds(15457).format('H:mm:ss');
+    let newTime = moment().startOf('day').seconds(seconds).format('H:mm:ss');
     setTime(newTime);
   }, []);
 
